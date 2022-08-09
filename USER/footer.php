@@ -3,7 +3,7 @@
 <!-- footer -->
 <footer class=" text-center p-2 mt-3  " style="background-color: #06FF00;" >
 <div class="container">
-  <small class="text-black">&copyCopyright by Maulana Mahmudi Juni 2022</small>
+  <small class="text-black">&copyCopyright by You Shop App 2022</small>
   
 </div>
 

@@ -32,9 +32,17 @@
         <li class="nav-item">
           <a class="nav-link" href="produk-minuman.php">Produk Minuman</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="produk-konter.php">Produk Konter</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Produk Lainnya
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="produk-pakaian.php">Produk Pakaian</a></li>
+            <li><a class="dropdown-item" href="produk-konter.php">Produk Konter</a></li>
+           
+          </ul>
         </li>
+      
         <li class="nav-item">
           <a class="nav-link" href="../index.php"onclick="return confirm('Anda Yakin Ingin Keluar ?');">Logout</a>
         </li>

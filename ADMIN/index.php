@@ -85,29 +85,29 @@ include "koneksi.php";
   
 
   <div class="row ">
-    <div class="card col-6 col-md-4 ">
-      <img src="../file/eb klatak cell.jpeg" alt="">
-      <h5 style="text-align: center;">EB KLATAK CELL</h5>
+    <div  class="card col-6 col-md-4 " > 
+      <img src="../file/Baby Gurita.jpeg" alt="">
+      <a style="text-align: center;" href="produk-pakaian.php">GURITA BABY SHOP</a>
     </div>
     <div class="card col-6 col-md-4 ">
       <img src="../file/martabak maknyuss.jpg" alt="">
-      <h5 style="text-align: center;">MARTABAK MAKNYUS</h5>
+      <a style="text-align: center;" href="produk-makanan.php">MARTABAK MAKNYUS</a>
     </div>
     <div class="card col-6 col-md-4">
       <img src="../foto-konter/ez cell.jpeg" alt="">
-      <h5 style="text-align: center;">EZ CELL</h5>
+      <a style="text-align: center;" href="produk-konter.php">EZ CEll</a>
     </div>
     <div class="card col-6 col-md-4">
       <img src="../foto-minuman/vescobar id.jpg" alt="">
-      <h5 style="text-align: center;">VESCOBAR</h5>
+      <a style="text-align: center;" href="produk-minuman.php">VESCOBAR ID</a>
     </div>
     <div class="card col-6 col-md-4">
       <img src="../foto-makanan/bakso bakar.jpg" alt="">
-      <h5 style="text-align: center;">BAKSO BAKAR</h5>
+      <a style="text-align: center;" href="produk-makanan.php">BAKSO BAKAR</a>
     </div>
     <div class="card col-6 col-md-4">
       <img src="../foto-minuman/van bury.jpeg" alt="">
-      <h5 style="text-align: center;">VAN BURY</h5>
+      <a style="text-align: center;" href="produk-minuman.php">VAN BURY</a>
     </div>
   </div>
 </div>

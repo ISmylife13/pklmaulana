@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2022 at 04:52 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.28
+-- Waktu pembuatan: 07 Agu 2022 pada 15.13
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_konter`
+-- Struktur dari tabel `tbl_konter`
 --
 
 CREATE TABLE `tbl_konter` (
@@ -37,7 +37,7 @@ CREATE TABLE `tbl_konter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_konter`
+-- Dumping data untuk tabel `tbl_konter`
 --
 
 INSERT INTO `tbl_konter` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO`) VALUES
@@ -53,7 +53,7 @@ INSERT INTO `tbl_konter` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_makanan`
+-- Struktur dari tabel `tbl_makanan`
 --
 
 CREATE TABLE `tbl_makanan` (
@@ -66,7 +66,7 @@ CREATE TABLE `tbl_makanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_makanan`
+-- Dumping data untuk tabel `tbl_makanan`
 --
 
 INSERT INTO `tbl_makanan` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO`) VALUES
@@ -85,7 +85,7 @@ INSERT INTO `tbl_makanan` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_minuman`
+-- Struktur dari tabel `tbl_minuman`
 --
 
 CREATE TABLE `tbl_minuman` (
@@ -98,7 +98,7 @@ CREATE TABLE `tbl_minuman` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_minuman`
+-- Dumping data untuk tabel `tbl_minuman`
 --
 
 INSERT INTO `tbl_minuman` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO`) VALUES
@@ -117,7 +117,7 @@ INSERT INTO `tbl_minuman` (`ID`, `NAMA`, `DESKRIPSI`, `ALAMAT`, `CONTACT`, `FOTO
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -127,7 +127,7 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_user`
+-- Dumping data untuk tabel `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id`, `username`, `password`) VALUES
@@ -143,53 +143,53 @@ INSERT INTO `tbl_user` (`id`, `username`, `password`) VALUES
 --
 
 --
--- Indexes for table `tbl_konter`
+-- Indeks untuk tabel `tbl_konter`
 --
 ALTER TABLE `tbl_konter`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `tbl_makanan`
+-- Indeks untuk tabel `tbl_makanan`
 --
 ALTER TABLE `tbl_makanan`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `tbl_minuman`
+-- Indeks untuk tabel `tbl_minuman`
 --
 ALTER TABLE `tbl_minuman`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `tbl_user`
+-- Indeks untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_konter`
+-- AUTO_INCREMENT untuk tabel `tbl_konter`
 --
 ALTER TABLE `tbl_konter`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `tbl_makanan`
+-- AUTO_INCREMENT untuk tabel `tbl_makanan`
 --
 ALTER TABLE `tbl_makanan`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT for table `tbl_minuman`
+-- AUTO_INCREMENT untuk tabel `tbl_minuman`
 --
 ALTER TABLE `tbl_minuman`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
