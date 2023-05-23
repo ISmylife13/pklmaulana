@@ -1,0 +1,47 @@
+:root {
+    --primary: #3bb0de;
+    --bg: #44add6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg);
+    color: rgb(233, 234, 226);
+    position: relative;
+}
+
+.bgdepan {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/makanan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.bgdepan::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient();
+}
+
+.bgdepan.content {
+    padding: 1, 4rem 10%;
+    max-width: 10rem;
+}

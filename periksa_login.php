@@ -1,6 +1,6 @@
 <?php 
 
-require "ADMIN/koneksi.php";
+require "koneksi.php";
 
 function regitrasi($data){
   global $koneksi;
@@ -9,7 +9,7 @@ function regitrasi($data){
   $password = mysqli_real_escape_string($koneksi, $data["password"]);
   $password2 = mysqli_real_escape_string($koneksi, $data["password2"]);
 
-  $result = mysqli_query($koneksi, "SELECT username FROM tbl_user WHERE username = '$username'");
+  $result = mysqli_query($koneksi, "SELECT username FROM user WHERE username = '$username'");
 
   if(mysqli_fetch_assoc($result)){
 
@@ -30,7 +30,7 @@ function regitrasi($data){
   
   // konek ke database
 
-  mysqli_query($koneksi, "INSERT INTO tbl_user VALUES('', '$username', '$password')");
+  mysqli_query($koneksi, "INSERT INTO user VALUES('', '$username', '$password')");
   
   return mysqli_affected_rows($koneksi);
 

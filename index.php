@@ -1,13 +1,13 @@
 <?php 
 session_start();
 
-require "ADMIN/koneksi.php";
+require "koneksi.php";
 // cek login 
 if (isset($_POST['submit'])){
 // membedakan user dg admin
   $username = $_POST["username"];
   $password = $_POST["password"];
-  $result2 = mysqli_query($koneksi, "SELECT * FROM tbl_user WHERE username = '$username'");
+  $result2 = mysqli_query($koneksi, "SELECT * FROM user WHERE username = '$username'");
 
   if(mysqli_num_rows($result2) > 0 ){
     $row = mysqli_fetch_assoc($result2);
@@ -57,12 +57,12 @@ if (isset($_POST['submit'])){
         <div class="card p-3" style="max-width: 350px; border-radius:20px;">
 
           <div class="card-body" style="background-color:#FFE400; border-radius:15px;">
-            <h4 class="card-title">YOU SHOP </h4><br>
+            <h4 class="card-title">E-COMMERCE </h4><br>
             <div>
-              <img src="../YOU SHOP/file/login.jpg" width="100px" class="rounded-circle">
+              <img src="../e-commerce/file/login.jpg" width="100px" class="rounded-circle">
             </div>
             <h4 class="card-title">Login</h4><br>
-        
+
             <div class="card-text">
 
               <form action="" method="POST">
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])){
                 <button type="submit" name="submit" class="btn btn-primary" value="submit">Masuk</button>
                 <br>
                 <?php if (isset($error)) : ?>
-                  <p class="error" style="color: red;">Username/Password Salah !</p>
+                <p class="error" style="color: red;">Username/Password Salah !</p>
                 <?php endif; ?>
 
 
